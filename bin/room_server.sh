@@ -1,6 +1,10 @@
 #!/bin/bash
 
+export LD_LIBRARY_PATH="/usr/local/lib"
+export PATH=/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin
+
 name=room_server
+chmod 755 $name
 
 start()
 {
