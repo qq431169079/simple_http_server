@@ -1294,7 +1294,8 @@ void cJSON_Minify(char *json)
             {
                 if (*json=='\\') *into++=*json++;
                 *into++=*json++;
-            }*into++=*json++;
+            }
+            *into++=*json++;
         }
         else *into++=*json++;           /* All other characters. */
     }
